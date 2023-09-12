@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        #txtwhite {
+            color: white;
+        }
+
+        #color-orange {
+            color: rgb(225, 103, 9);
+        }
+
+        .navhov:hover {
+            background-color: rgb(225, 103, 9);
+            color: white;
+            border-radius: 100px;
+            border: 1px;
+            width: 60px;
+            padding: 80px;
+        }
+
+        .icons {
+            background-color: white;
+        }
+
+        .icons:hover {
+            background-color: rgb(225, 103, 9);
+            color: white;
+        }
+
+        img {
+            position: relative;
+        }
+
+        .card .icons {
+            position: absolute;
+            z-index: 3;
+            padding: 5px;
+            right: 2rem;
+            top: 2rem;
+        }
+
+        form input {
+            box-shadow: 0px 0px 8px rgb(210, 209, 209);
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            color: white;
+            opacity: 0.6;
+            font-size: 20px;
+
+        }
+
+        .footer ul li {
+            list-style: none;
+        }
+
+        .home button {
+            background-color: black;
+        }
+
+        .home button:hover {
+            background-color: rgb(225, 103, 9);
+            width: 135px;
+            border: 0;
+        }
+
+        .bbutton button:hover {
+            background-color: rgb(225, 103, 9);
+            box-shadow: 0px 0px 8px rgb(210, 209, 209);
+            border: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-top p-3" style="background-color: black;">
+        <div class="container-lg ">
+            <a class="navbar-brand" id="txtwhite" href="#"> <i class="fa-solid fa-utensils me-2 " id="color-orange"></i>
+                Safari Restaurent</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars" style="color: white;"></i>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-center text-start d-md-start" id="navbarNav">
+                <ul class="navbar-nav  align-items-center ">
+                    <li class="nav-item">
+                        <a class="nav-link rounded-pill p-2 py-2 px-3" id="txtwhite"
+                            style="background-color:rgb(225, 103, 9) ;" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navhov p-2 py-1 px-2" id="txtwhite" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navhov p-2 py-1 px-2" id="txtwhite" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navhov p-2 py-1 px-2" id="txtwhite" href="#Review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navhov p-2 py-1 px-2" id="txtwhite" href="#Order">Order</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-none d-md-block " id="navbarNav ">
+                <ul class="navbar-nav text-center align-items-center justify-content-center ">
+                    <li class="nav-item me-2">
+                        <i class=" icons fa-solid fa-magnifying-glass  rounded-circle  px-3 py-3"></i>
+                    </li>
+                    <li class="nav-item  ">
+                        <i class=" icons fa-solid fa-cart-shopping  rounded-circle  px-3 py-3"></i>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end-->
+
+    <!-- section 1 -->
+    <section class="home" id="home" style="padding-top: 5rem;">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- item1 -->
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center mt-4">
+                            <div class="col-lg-6 ">
+                                <h1>
+                                    <div class="lead fs-4" id="color-orange">Our Special Fastfood</div>
+                                    <div class="fw-normal display-3">Humbuger</div>
+                                </h1>
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+                                    adipisci
+                                    culpa
+                                    obcaecati esse minus odio voluptatum a dolor corrupti.</p>
+                                <button type="button" id="txtwhite" class="btn px-4">Order
+                                    Now</button>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="./IMG/home1.jpg" class="img-fluid " alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- item2 -->
+                    <div class="container ">
+                        <div class="row justify-content-center align-items-center mt-4">
+                            <div class="col-lg-6 ">
+                                <h1>
+                                    <div class="lead fs-4" id="color-orange">Our Special Pizza</div>
+                                    <div class="fw-normal display-3">Hot Pizza</div>
+                                </h1>
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+                                    adipisci
+                                    culpa
+                                    obcaecati esse minus odio voluptatum a dolor corrupti.</p>
+                                <button type="button" id="txtwhite" class="btn px-4">Order
+                                    Now</button>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="./IMG/home2.jpg" class="img-fluid " alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- item3 -->
+                    <div class="container ">
+                        <div class="row justify-content-center align-items-center mt-4">
+                            <div class="col-lg-6 ">
+                                <h1>
+                                    <div class="lead fs-4" id="color-orange">Our Special Chicken</div>
+                                    <div class="fw-normal display-3">Fried Chicken</div>
+                                </h1>
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+                                    adipisci
+                                    culpa
+                                    obcaecati esse minus odio voluptatum a dolor corrupti.</p>
+                                <button type="button" id="txtwhite" class="btn px-4">Order
+                                    Now</button>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="./IMG/home3.jpg" class="img-fluid " alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sectin 1 end -->
+
+
+    <!-- section2 -->
+    <section class="about" id="about">
+        <div class="text-center py-3 ">
+            <h4 class="sub-heading fw-bold" id="color-orange">About Us</h4>
+            <h3 class="heading fw-bold">WHY CHOOSE US</h3>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6">
+                    <img src="./IMG/Assignment_Pictures/about.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 mt-3">
+                    <h1>Best Food In The Country</h1>
+                    <p class="lead fs-6">Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood, Chicken
+                        And
+                        Chips, Nolosha
+                        Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                    <p class="lead fs-6 ">Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood, Chicken
+                        And
+                        Chips, Nolosha
+                        Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                        <!-- <div class="">
+                            <span class="bg-light p-3"><i
+                                class="fs-4 fa-solid  fa-truck-fast me-2 " id="color-orange"></i>Free Delivery</span>
+                            <span class="bg-light p-3"><i
+                                class="fs-4 fa-solid fa-dollar-sign me-2 " id="color-orange"></i>Easy Payments</span>
+                            <span class="bg-light p-3"><i
+                                class="fs-4 fa-solid fa-headset me-2 " id="color-orange"></i>
+                            24/7 Service</span>
+                        </div> -->
+
+                    <div class="text-center ">
+                        <div class="row gy-2 gx-1">
+                            <div class=" col-lg-6 col-md-4 col-sm-6 border bg-light py-2"><i
+                                    class="fs-4 fa-solid  fa-truck-fast me-2" id="color-orange"></i>Free Delivery</div>
+                            <div class=" col-lg-6 col-md-4 col-sm-6 border bg-light py-2"><i
+                                    class="fs-4 fa-solid fa-dollar-sign me-2" id="color-orange"></i>Easy Payments</div>
+                            <div class=" col-lg-12  col-md-4 col-sm-12 border  bg-light py-2"><i
+                                    class="fs-4 fa-solid fa-headset me-2" id="color-orange"></i>
+                                24/7 Service</div>
+                        </div>
+
+
+                    </div>
+                    <div class="home">
+                        <button type="button" id="txtwhite" class="btn px-4 mt-3 btn-primary">
+                            Learn MOre</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 2 end -->
+
+
+    <!-- section 3 -->
+    <section class="menu pt-5" id="menu">
+        <div class="container">
+            <div class="text-center ">
+                <h5 id="color-orange">Menu</h5>
+                <h2>SPECIALITY FOOD AND JUICE</h2>
+            </div>
+
+            <div class="row justify-content-center align-items-center pt-2">
+                <!-- item1 -->
+                <div class="col-xl-4 col-xxl-3 col-md-6 col-sm-12 px-2 mb-3">
+                    <div class="card  p-4">
+                        <div>
+                            <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
+
+                            <img src="./IMG/Assignment_Pictures/menu9.jpg" class="card-img-top rounded" alt="...">
+
+                        </div>
+                        <di=v class="card-body ">
+                            <div class="" id="color-orange">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"> </i>
+                            </div>
+                            <h5 class="card-title fw-bold">Chicken And Chips</h5>
+                            <p class="card-text lead fs-6">Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan,
+                                Fastfood, Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                            <div class="home"> <button type="button" id="txtwhite" class="btn px-4">Order
+                                    Now</button>&nbsp;&nbsp;<span class="fs-3 lead " id="color-orange">$20.00</span>
+                            </div>
+                    </div>
+                </div>
+                <!-- item2 -->
+                <div class="col-xl-4 col-md-6 col-xxl-3  col-sm-12 px-2 mb-3">
+                    <div class="card  p-4">
+                        <div>
+                            <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
+
+                            <img src="./IMG/Assignment_Pictures/menu1.jpg" class="card-img-top rounded" alt="...">
+
+                        </div>
+                        <di=v class="card-body ">
+                            <div class="" id="color-orange">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"> </i>
+                            </div>
+                            <h5 class="card-title fw-bold">Chicken And Chips</h5>
+                            <p class="card-text lead fs-6">Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan,
+                                Fastfood, Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                            <div class="home"> <button type="button" id="txtwhite" class="btn px-4">Order
+                                    Now</button>&nbsp;&nbsp;<span class="fs-3 lead" id="color-orange">$20.00</span>
+                            </div>
+                    </div>
+                </div>
+                <!-- item 3 -->
+                <div class="col-xl-4 col-md-6  col-xxl-3 col-sm-12 px-2 mb-3">
+                    <div class="card  p-4">
+                        <div>
+                            <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
+
+                            <img src="./IMG/Assignment_Pictures/menu2.jpg" class="card-img-top rounded" alt="...">
+
+                        </div>
+                        <di=v class="card-body ">
+                            <div class="" id="color-orange">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"> </i>
+                            </div>
+                            <h5 class="card-title fw-bold">Chicken And Chips</h5>
+                            <p class="card-text lead fs-6">Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan,
+                                Fastfood, Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                            <div> <a href="#" class="btn px-3 text-light" style="background-color: black;">Order
+                                    Now</a>&nbsp;&nbsp;<span class="fs-3 lead" id="color-orange">$20.00</span>
+                            </div>
+                    </div>
+                </div>
+                <!-- item 4 -->
+                <div class="col-xl-4 col-md-6  col-xxl-3 col-sm-12 px-2 mb-3">
+                    <div class="card  p-4">
+                        <div>
+                            <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
+
+                            <img src="./IMG/Assignment_Pictures/menu3.jpg" class="card-img-top rounded" alt="...">
+
+                        </div>
+                        <di=v class="card-body ">
+                            <div class="" id="color-orange">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"> </i>
+                            </div>
+                            <h5 class="card-title fw-bold">Chicken And Chips</h5>
+                            <p class="card-text lead fs-6">Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan,
+                                Fastfood, Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                            <div class="home"> <button type="button" id="txtwhite" class="btn px-4">Order
+                                    Now</button>&nbsp;&nbsp;<span class="fs-3 lead" id="color-orange">$20.00</span>
+                            </div>
+                    </div>
+                </div>
+                <!-- item 5 -->
+                <div class="col-xl-4 col-md-6  col-xxl-3 col-sm-12 px-2 mb-3">
+                    <div class="card  p-4">
+                        <div>
+                            <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
+
+                            <img src="./IMG/Assignment_Pictures/menu4.jpg" class="card-img-top rounded" alt="...">
+
+                        </div>
+                        <di=v class="card-body ">
+                            <div class="" id="color-orange">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"> </i>
+                            </div>
+                            <h5 class="card-title fw-bold">Chicken And Chips</h5>
+                            <p class="card-text lead fs-6">Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan,
+                                Fastfood, Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                            <div class="home"> <button type="button" id="txtwhite" class="btn px-4">Order
+                                    Now</button>&nbsp;&nbsp;<span class="fs-3 lead" id="color-orange">$20.00</span>
+                            </div>
+                    </div>
+                </div>
+                <!-- item 6 -->
+                <div class="col-xl-4 col-md-6  col-xxl-3 col-sm-12 px-2 mb-3">
+                    <div class="card  p-4">
+                        <div>
+                            <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
+
+                            <img src="./IMG/Assignment_Pictures/menu5.jpg" class="card-img-top rounded" alt="...">
+
+                        </div>
+                        <di=v class="card-body ">
+                            <div class="" id="color-orange">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"> </i>
+                            </div>
+                            <h5 class="card-title fw-bold">Chicken And Chips</h5>
+                            <p class="card-text lead fs-6">Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan,
+                                Fastfood, Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                            <div class="home"> <button type="button" id="txtwhite" class="btn px-4">Order
+                                    Now</button>&nbsp;&nbsp;<span class="fs-3 lead" id="color-orange">$20.00</span>
+                            </div>
+                    </div>
+                </div>
+                <!-- item 7 -->
+                <div class="col-xl-4 col-md-6  col-xxl-3 col-sm-12 px-2 mb-3">
+                    <div class="card  p-4">
+                        <div>
+                            <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
+
+                            <img src="./IMG/Assignment_Pictures/menu6.jpg" class="card-img-top rounded" alt="...">
+
+                        </div>
+                        <di=v class="card-body ">
+                            <div class="" id="color-orange">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"> </i>
+                            </div>
+                            <h5 class="card-title fw-bold">Chicken And Chips</h5>
+                            <p class="card-text lead fs-6">Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan,
+                                Fastfood, Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                            <div class="home"> <button type="button" id="txtwhite" class="btn px-4">Order
+                                    Now</button>&nbsp;&nbsp;<span class="fs-3 lead" id="color-orange">$20.00</span>
+                            </div>
+                    </div>
+                </div>
+                <!-- item 8 -->
+                <div class="col-xl-4 col-md-6  col-xxl-3 col-sm-12 px-2 mb-3">
+                    <div class="card  p-4">
+                        <div>
+                            <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
+
+                            <img src="./IMG/Assignment_Pictures/menu7.jpg" class="card-img-top rounded" alt="...">
+
+                        </div>
+                        <di=v class="card-body ">
+                            <div class="" id="color-orange">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"> </i>
+                            </div>
+                            <h5 class="card-title fw-bold">Chicken And Chips</h5>
+                            <p class="card-text lead fs-6">Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan,
+                                Fastfood, Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                            <div class="home"> <button type="button" id="txtwhite" class="btn px-4">Order
+                                    Now</button>&nbsp;&nbsp;<span class="fs-3 lead" id="color-orange">$20.00</span>
+                            </div>
+                    </div>
+                </div>
+                <!-- item 9 -->
+                <div class="col-xl-4 col-md-6  col-xxl-3 col-sm-12 px-2 mb-3">
+                    <div class="card  p-4">
+                        <div>
+                            <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
+
+                            <img src="./IMG/Assignment_Pictures/menu8.jpg" class="card-img-top rounded" alt="...">
+
+                        </div>
+                        <di=v class="card-body ">
+                            <div class="" id="color-orange">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"> </i>
+                            </div>
+                            <h5 class="card-title fw-bold">Chicken And Chips</h5>
+                            <p class="card-text lead fs-6">Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan,
+                                Fastfood, Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                            <div class="home"> <button type="button" id="txtwhite" class="btn px-4">Order
+                                    Now</button>&nbsp;&nbsp;<span class="fs-3 lead" id="color-orange">$20.00</span>
+                            </div>
+                    </div>
+                </div>
+                <!-- item 10 -->
+                <div class="col-xl-4 col-md-6  col-xxl-3 col-sm-12 px-2 mb-3">
+                    <div class="card  p-4">
+                        <div>
+                            <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
+
+                            <img src="./IMG/Assignment_Pictures/mangoJuice.jpg" class="card-img-top rounded" alt="...">
+
+                        </div>
+                        <di=v class="card-body ">
+                            <div class="" id="color-orange">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"> </i>
+                            </div>
+                            <h5 class="card-title fw-bold">Chicken And Chips</h5>
+                            <p class="card-text lead fs-6">Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan,
+                                Fastfood, Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                            <div class="home"> <button type="button" id="txtwhite" class="btn px-4">Order
+                                    Now</button>&nbsp;&nbsp;<span class="fs-3 lead" id="color-orange">$20.00</span>
+                            </div>
+                    </div>
+                </div>
+                <!-- item 11 -->
+                <div class="col-xl-4 col-md-6  col-xxl-3 col-sm-12 px-2 mb-3">
+                    <div class="card  p-4">
+                        <div>
+                            <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
+
+                            <img src="./IMG/Assignment_Pictures/lemonJuice.jpg" class="card-img-top rounded" alt="...">
+
+                        </div>
+                        <di=v class="card-body ">
+                            <div class="" id="color-orange">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"> </i>
+                            </div>
+                            <h5 class="card-title fw-bold">Chicken And Chips</h5>
+                            <p class="card-text lead fs-6">Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan,
+                                Fastfood, Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                            <div class="home"> <button type="button" id="txtwhite" class="btn px-4">Order
+                                    Now</button>&nbsp;&nbsp;<span class="fs-3 lead" id="color-orange">$20.00</span>
+                            </div>
+                    </div>
+                </div>
+                <!-- item 12 -->
+                <div class="col-xl-4 col-md-6  col-xxl-3 col-sm-12 px-2 mb-3">
+                    <div class="card  p-4">
+                        <div>
+                            <i class=" icons fa-solid fa-heart  rounded-circle  px-3 py-3"></i>
+
+                            <img src="./IMG/Assignment_Pictures/recipe-red-drink.jpg" class="card-img-top rounded"
+                                alt="...">
+
+                        </div>
+                        <di=v class="card-body ">
+                            <div class="" id="color-orange">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"> </i>
+                            </div>
+                            <h5 class="card-title fw-bold">Chicken And Chips</h5>
+                            <p class="card-text lead fs-6">Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku Raaxeesataan,
+                                Fastfood, Chicken And Chips, Nolosha Waxay Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                            <div class="home"> <button type="button" id="txtwhite" class="btn px-4">Order
+                                    Now</button>&nbsp;&nbsp;<span class="fs-3 lead" id="color-orange">$20.00</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+    <!-- section 3 end -->
+
+
+    <!-- section 4 -->
+    <section class="Review py-4" id="Review">
+        <div class="text-center ">
+            <h5 id="color-orange">Customer's Review</h5>
+            <h2>WHAT THEY SAY</h2>
+        </div>
+        <!-- carousel -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <section class=" py-3">
+                        <div class="container-lg">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-sm-3">
+                                    <div class="card p-1">
+                                        <div class="card-body">
+                                            <div class="py-1">
+                                                <div>
+                                                    <img src="./IMG/Assignment_Pictures/sabarinIcon.jpg "
+                                                        style="width: 55px; height: 65px; float: left;"
+                                                        class="card-img-left rounded-circle" alt="...">
+                                                    <span class=""
+                                                        style="color: rgb(157, 155, 158); font-size: 60px; position: absolute; right: 20px; top: 10px;"><i
+                                                            class="fa-solid fa-quote-right"></i></span>
+                                                </div>
+                                                <h5 class="card-title">khadija</h5>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-half" id="color-orange"></i>
+                                            </div>
+                                            <p class="card-text pt-2" style="font-size: 11px; opacity: 0.8;">Macaamiil
+                                                Waxaanu Idin
+                                                Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood, Chicken And Chips,
+                                                Nolosha<span class="d-none d-lg-block"> Waxay Rabtaa Iney Raxeesato Ee
+                                                    Uraaxeeya.Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku
+                                                    Raaxeesataan, </span>Fastfood, Chicken And Chips, Nolosha Waxay
+                                                Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card p-1">
+                                        <div class="card-body">
+                                            <div class="py-1">
+                                                <div>
+                                                    <img src="./IMG/Assignment_Pictures/yahyeIcon.png "
+                                                        style="width: 55px; height: 65px; float: left;"
+                                                        class="card-img-left rounded-circle" alt="...">
+                                                    <span class=""
+                                                        style="color: rgb(157, 155, 158); font-size: 60px; position: absolute; right: 20px; top: 10px;"><i
+                                                            class="fa-solid fa-quote-right"></i></span>
+                                                </div>
+                                                <h5 class="card-title">hussein</h5>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-half" id="color-orange"></i>
+                                            </div>
+                                            <p class="card-text pt-2" style="font-size: 11px; opacity: 0.8;">Macaamiil
+                                                Waxaanu Idin
+                                                Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood, Chicken And Chips,
+                                                Nolosha<span class="d-none d-lg-block"> Waxay Rabtaa Iney Raxeesato Ee
+                                                    Uraaxeeya.Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku
+                                                    Raaxeesataan, </span>Fastfood, Chicken And Chips, Nolosha Waxay
+                                                Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card p-1">
+                                        <div class="card-body">
+                                            <div class="py-1">
+                                                <div>
+                                                    <img src="./IMG/Assignment_Pictures/mahadIcon.jpg "
+                                                        style="width: 55px; height: 65px; float: left;"
+                                                        class="card-img-left rounded-circle" alt="...">
+                                                    <span class=""
+                                                        style="color: rgb(157, 155, 158); font-size: 60px; position: absolute; right: 20px; top: 10px;"><i
+                                                            class="fa-solid fa-quote-right"></i></span>
+                                                </div>
+                                                <h5 class="card-title">ali</h5>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-half" id="color-orange"></i>
+                                            </div>
+                                            <p class="card-text pt-2" style="font-size: 11px; opacity: 0.8;">Macaamiil
+                                                Waxaanu Idin
+                                                Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood, Chicken And Chips,
+                                                Nolosha<span class="d-none d-lg-block"> Waxay Rabtaa Iney Raxeesato Ee
+                                                    Uraaxeeya.Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku
+                                                    Raaxeesataan, </span>Fastfood, Chicken And Chips, Nolosha Waxay
+                                                Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card p-1">
+                                        <div class="card-body">
+                                            <div class="py-1">
+                                                <div>
+                                                    <img src="./IMG/Assignment_Pictures/person1.png "
+                                                        style="width: 55px; height: 65px; float: left;"
+                                                        class="card-img-left rounded-circle" alt="...">
+                                                    <span class=""
+                                                        style="color: rgb(157, 155, 158); font-size: 60px; position: absolute; right: 20px; top: 10px;"><i
+                                                            class="fa-solid fa-quote-right"></i></span>
+                                                </div>
+                                                <h5 class="card-title">khadija</h5>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-half" id="color-orange"></i>
+                                            </div>
+                                            <p class="card-text pt-2" style="font-size: 11px; opacity: 0.8;">Macaamiil
+                                                Waxaanu Idin
+                                                Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood, Chicken And Chips,
+                                                Nolosha<span class="d-none d-lg-block"> Waxay Rabtaa Iney Raxeesato Ee
+                                                    Uraaxeeya.Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku
+                                                    Raaxeesataan, </span>Fastfood, Chicken And Chips, Nolosha Waxay
+                                                Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="carousel-item">
+                    <section class=" py-3">
+                        <div class="container-lg">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-sm-3">
+                                    <div class="card p-1">
+                                        <div class="card-body">
+                                            <div class="py-1">
+                                                <div>
+                                                    <img src="./IMG/Assignment_Pictures/sabarinIcon.jpg "
+                                                        style="width: 55px; height: 65px; float: left;"
+                                                        class="card-img-left rounded-circle" alt="...">
+                                                    <span class=""
+                                                        style="color: rgb(157, 155, 158); font-size: 60px; position: absolute; right: 20px; top: 10px;"><i
+                                                            class="fa-solid fa-quote-right"></i></span>
+                                                </div>
+                                                <h5 class="card-title">khadija</h5>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-half" id="color-orange"></i>
+                                            </div>
+                                            <p class="card-text pt-2" style="font-size: 11px; opacity: 0.8;">Macaamiil
+                                                Waxaanu Idin
+                                                Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood, Chicken And Chips,
+                                                Nolosha<span class="d-none d-lg-block"> Waxay Rabtaa Iney Raxeesato Ee
+                                                    Uraaxeeya.Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku
+                                                    Raaxeesataan, </span>Fastfood, Chicken And Chips, Nolosha Waxay
+                                                Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card p-1">
+                                        <div class="card-body">
+                                            <div class="py-1">
+                                                <div>
+                                                    <img src="./IMG/Assignment_Pictures/yahyeIcon.png "
+                                                        style="width: 55px; height: 65px; float: left;"
+                                                        class="card-img-left rounded-circle" alt="...">
+                                                    <span class=""
+                                                        style="color: rgb(157, 155, 158); font-size: 60px; position: absolute; right: 20px; top: 10px;"><i
+                                                            class="fa-solid fa-quote-right"></i></span>
+                                                </div>
+                                                <h5 class="card-title">hussein</h5>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-half" id="color-orange"></i>
+                                            </div>
+                                            <p class="card-text pt-2" style="font-size: 11px; opacity: 0.8;">Macaamiil
+                                                Waxaanu Idin
+                                                Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood, Chicken And Chips,
+                                                Nolosha<span class="d-none d-lg-block"> Waxay Rabtaa Iney Raxeesato Ee
+                                                    Uraaxeeya.Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku
+                                                    Raaxeesataan, </span>Fastfood, Chicken And Chips, Nolosha Waxay
+                                                Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card p-1">
+                                        <div class="card-body">
+                                            <div class="py-1">
+                                                <div>
+                                                    <img src="./IMG/Assignment_Pictures/mahadIcon.jpg "
+                                                        style="width: 55px; height: 65px; float: left;"
+                                                        class="card-img-left rounded-circle" alt="...">
+                                                    <span class=""
+                                                        style="color: rgb(157, 155, 158); font-size: 60px; position: absolute; right: 20px; top: 10px;"><i
+                                                            class="fa-solid fa-quote-right"></i></span>
+                                                </div>
+                                                <h5 class="card-title">ali</h5>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-half" id="color-orange"></i>
+                                            </div>
+                                            <p class="card-text pt-2" style="font-size: 11px; opacity: 0.8;">Macaamiil
+                                                Waxaanu Idin
+                                                Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood, Chicken And Chips,
+                                                Nolosha<span class="d-none d-lg-block"> Waxay Rabtaa Iney Raxeesato Ee
+                                                    Uraaxeeya.Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku
+                                                    Raaxeesataan, </span>Fastfood, Chicken And Chips, Nolosha Waxay
+                                                Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card p-1">
+                                        <div class="card-body">
+                                            <div class="py-1">
+                                                <div>
+                                                    <img src="./IMG/Assignment_Pictures/person1.png "
+                                                        style="width: 55px; height: 65px; float: left;"
+                                                        class="card-img-left rounded-circle" alt="...">
+                                                    <span class=""
+                                                        style="color: rgb(157, 155, 158); font-size: 60px; position: absolute; right: 20px; top: 10px;"><i
+                                                            class="fa-solid fa-quote-right"></i></span>
+                                                </div>
+                                                <h5 class="card-title">khadija</h5>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-half" id="color-orange"></i>
+                                            </div>
+                                            <p class="card-text pt-2" style="font-size: 11px; opacity: 0.8;">Macaamiil
+                                                Waxaanu Idin
+                                                Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood, Chicken And Chips,
+                                                Nolosha<span class="d-none d-lg-block"> Waxay Rabtaa Iney Raxeesato Ee
+                                                    Uraaxeeya.Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku
+                                                    Raaxeesataan, </span>Fastfood, Chicken And Chips, Nolosha Waxay
+                                                Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="carousel-item">
+                    <section class=" py-3">
+                        <div class="container-lg">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-sm-3">
+                                    <div class="card p-1">
+                                        <div class="card-body">
+                                            <div class="py-1">
+                                                <div>
+                                                    <img src="./IMG/Assignment_Pictures/sabarinIcon.jpg "
+                                                        style="width: 55px; height: 65px; float: left;"
+                                                        class="card-img-left rounded-circle" alt="...">
+                                                    <span class=""
+                                                        style="color: rgb(157, 155, 158); font-size: 60px; position: absolute; right: 20px; top: 10px;"><i
+                                                            class="fa-solid fa-quote-right"></i></span>
+                                                </div>
+                                                <h5 class="card-title">khadija</h5>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-half" id="color-orange"></i>
+                                            </div>
+                                            <p class="card-text pt-2" style="font-size: 11px; opacity: 0.8;">Macaamiil
+                                                Waxaanu Idin
+                                                Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood, Chicken And Chips,
+                                                Nolosha<span class="d-none d-lg-block"> Waxay Rabtaa Iney Raxeesato Ee
+                                                    Uraaxeeya.Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku
+                                                    Raaxeesataan, </span>Fastfood, Chicken And Chips, Nolosha Waxay
+                                                Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card p-1">
+                                        <div class="card-body">
+                                            <div class="py-1">
+                                                <div>
+                                                    <img src="./IMG/Assignment_Pictures/yahyeIcon.png "
+                                                        style="width: 55px; height: 65px; float: left;"
+                                                        class="card-img-left rounded-circle" alt="...">
+                                                    <span class=""
+                                                        style="color: rgb(157, 155, 158); font-size: 60px; position: absolute; right: 20px; top: 10px;"><i
+                                                            class="fa-solid fa-quote-right"></i></span>
+                                                </div>
+                                                <h5 class="card-title">hussein</h5>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-half" id="color-orange"></i>
+                                            </div>
+                                            <p class="card-text pt-2" style="font-size: 11px; opacity: 0.8;">Macaamiil
+                                                Waxaanu Idin
+                                                Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood, Chicken And Chips,
+                                                Nolosha<span class="d-none d-lg-block"> Waxay Rabtaa Iney Raxeesato Ee
+                                                    Uraaxeeya.Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku
+                                                    Raaxeesataan, </span>Fastfood, Chicken And Chips, Nolosha Waxay
+                                                Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card p-1">
+                                        <div class="card-body">
+                                            <div class="py-1">
+                                                <div>
+                                                    <img src="./IMG/Assignment_Pictures/mahadIcon.jpg "
+                                                        style="width: 55px; height: 65px; float: left;"
+                                                        class="card-img-left rounded-circle" alt="...">
+                                                    <span class=""
+                                                        style="color: rgb(157, 155, 158); font-size: 60px; position: absolute; right: 20px; top: 10px;"><i
+                                                            class="fa-solid fa-quote-right"></i></span>
+                                                </div>
+                                                <h5 class="card-title">ali</h5>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-half" id="color-orange"></i>
+                                            </div>
+                                            <p class="card-text pt-2" style="font-size: 11px; opacity: 0.8;">Macaamiil
+                                                Waxaanu Idin
+                                                Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood, Chicken And Chips,
+                                                Nolosha<span class="d-none d-lg-block"> Waxay Rabtaa Iney Raxeesato Ee
+                                                    Uraaxeeya.Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku
+                                                    Raaxeesataan, </span>Fastfood, Chicken And Chips, Nolosha Waxay
+                                                Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card p-1">
+                                        <div class="card-body">
+                                            <div class="py-1">
+                                                <div>
+                                                    <img src="./IMG/Assignment_Pictures/person1.png "
+                                                        style="width: 55px; height: 65px; float: left;"
+                                                        class="card-img-left rounded-circle" alt="...">
+                                                    <span class=""
+                                                        style="color: rgb(157, 155, 158); font-size: 60px; position: absolute; right: 20px; top: 10px;"><i
+                                                            class="fa-solid fa-quote-right"></i></span>
+                                                </div>
+                                                <h5 class="card-title">khadija</h5>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-fill" id="color-orange"></i>
+                                                <i class="bi bi-star-half" id="color-orange"></i>
+                                            </div>
+                                            <p class="card-text pt-2" style="font-size: 11px; opacity: 0.8;">Macaamiil
+                                                Waxaanu Idin
+                                                Haynaa Cunooyiin Aad Ku Raaxeesataan, Fastfood, Chicken And Chips,
+                                                Nolosha<span class="d-none d-lg-block"> Waxay Rabtaa Iney Raxeesato Ee
+                                                    Uraaxeeya.Macaamiil Waxaanu Idin Haynaa Cunooyiin Aad Ku
+                                                    Raaxeesataan, </span>Fastfood, Chicken And Chips, Nolosha Waxay
+                                                Rabtaa Iney Raxeesato Ee Uraaxeeya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- carousel end -->
+    </section>
+    <!-- section 4 end -->
+
+    <!-- section 5 -->
+    <section class="Order p-4" id="Order">
+        <div class="container-lg">
+            <div class="text-center ">
+                <h5 id="color-orange">Order Now</h5>
+                <h2>DELIVERY AND FAST</h2>
+            </div>
+            <div class="border  ">
+
+                <div class="row justify-content-center align-items-center py-3 border-3">
+
+                    <div class="col-sm-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label ">Full Name</label>
+                                <input type="email" class="form-control rounded-pill p-3" id="exampleInputEmail1"
+                                    placeholder="Enter your name" aria-describedby="emailHelp">
+                            </div>
+                            <div class="input-group mb-3 mt-5">
+
+                                <select class="form-select rounded-pil p-3"
+                                    style="        box-shadow: 0px 0px 8px rgb(210, 209, 209); border-radius: 100px;"
+                                    aria-label="Default select example">
+                                    <option selected>Choose your order
+                                    </option>
+                                    <option>chicken pizza
+                                    </option>
+                                    <option value="1">fish izza</option>
+                                    <option value="2">lemon juice</option>
+                                    <option>chicken pizza
+                                    </option>
+                                    <option value="1">fish izza</option>
+                                    <option value="2">lemon juice</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">How Much</label>
+                                <input type="password" class="form-control rounded-pill p-3" id="exampleInputPassword1"
+                                    placeholder="How many orders">
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="exampleInputPassword1" class="form-label">Your Address</label>
+                                <input type="password" class="form-control " style="height: 250px; border-radius: 15%;"
+                                    id="exampleInputPassword1">
+
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <div class="col-sm-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Your Number</label>
+                                <input type="email" class="form-control rounded-pill p-3" id="exampleInputEmail1"
+                                    placeholder="Enter your name" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Your Email</label>
+                                <input type="password" class="form-control rounded-pill p-3" id="exampleInputPassword1"
+                                    placeholder="Enter your Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Date And Time</label>
+                                <input type="password" class="form-control rounded-pill p-3" id="exampleInputPassword1"
+                                    placeholder="mm/dd/yyyy">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Payment</label>
+                                <input type="password" class="form-control rounded-pill p-3" id="exampleInputPassword1"
+                                    placeholder="Enter Money">
+                            </div>
+                            <form>
+
+                            </form>
+                            <div class="text-center bbutton">
+                                <button type="submit" class="btn btn-primary btn-lg rounded-pill px-4 "
+                                    style="margin-top: 150px;">Order Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- section 5 end-->
+
+    <!-- section 8 -->
+    <section class="footer py-5" style="background-color: black;">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center g-5">
+                <div class="col-md-3 col-sm-6 ">
+                    <h3 id="txtwhite">Location</h3>
+                    <ul>
+                        <li><a href="">Banadir</a></li>
+                        <li><a href="">Hirshabelle</a></li>
+                        <li><a href="">Jubbaland</a></li>
+                        <li><a href="">Puntland</a></li>
+                        <li><a href="">Galmudug</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 ">
+                    <h3 id="txtwhite">Quick Links</h3>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="">Review</a></li>
+                        <li><a href="">Order</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 ">
+                    <h3 id="txtwhite">Contact Us</h3>
+                    <ul>
+                        <li><a href="">+25262384637267</a></li>
+                        <li><a href="">+252623811111</a></li>
+                        <li><a href="">khadija@gmail.com</a></li>
+                        <li><a href="">groupWork@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 ">
+                    <h3 id="txtwhite">Follow Us</h3>
+                    <div class="" style="margin-right: 150px;">
+                        <ul>
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Twitter</a></li>
+                            <li><a href="">TikTok</a></li>
+                            <li><a href="">instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 ">
+                <h5 class="lead" id="txtwhite"> &copy; 2023 created by<span id="color-orange"> khadija</span> </h5>
+            </div>
+        </div>
+    </section>
+    <!-- section 8 end -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
